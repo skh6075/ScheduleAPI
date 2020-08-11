@@ -1,13 +1,13 @@
 # ScheduleAPI
 PocketMine-MP Make it easy for developers to use scheduler task
 
-# How use?
+### How use?
 
 ```php
 use skh6075\ScheduleAPI\ScheduleAPI;
 ```
 
-# ScheduleAPI DelayedTask
+### ScheduleAPI DelayedTask
 ```php
 $main = $this;
 
@@ -16,7 +16,7 @@ ScheduleAPI::delayedTask (function () use ($main) {
 }, 20 * 2);
 ```
 
-# ScheduleAPI RepeatingTask
+### ScheduleAPI RepeatingTask
 ```php
 $main = $this;
 
