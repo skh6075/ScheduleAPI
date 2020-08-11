@@ -48,7 +48,7 @@ class ScheduleAPI extends PluginBase {
     }
     
     public static function repeatingTask (callable $callback, int $ticks): TaskHandler{
-        $handler = self::$i->getScheduler ()->scheduleRepetingTask (($task = self::taskHandler ($callback)), $ticks);
+        $handler = self::$i->getScheduler ()->scheduleRepeatingTask (($task = self::taskHandler ($callback)), $ticks);
         self::$tasks [$task->getTaskId ()] = $handler;
         return $handler;
     }
