@@ -24,3 +24,21 @@ ScheduleAPI::repeatingTask (function () use ($main) {
     $main->getLogger ()->info ('two-second repetition');
 }, 20 * 2);
 ```
+
+### ScheduleAPI DelayedRepeatingTask
+```php
+$main = $this;
+$delayTicks = 20 * 2;
+$ticks = 20 * 2;
+
+ScheduleAPI::delayedRepeatingTask (function () use ($main) {
+    $main->getLogger ()->info ('repeat delayed two-second');
+}, $delayTicks, $ticks);
+```
+
+### ScheduleAPI Function cancelTask
+#taskHandler = ScheduleAPI::repeatingTask (function () {
+    var_dump ('hello world');
+}, 20 * 2);
+ScheduleAPI::cancelTask ($taskHandler->getTaskId ());
+```
