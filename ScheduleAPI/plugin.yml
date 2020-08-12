@@ -1,0 +1,7 @@
+name: ScheduleAPI
+main: skh6075\ScheduleAPI\ScheduleAPI
+author: AvasKr
+version: 1.0.0
+api: 3.16.0
+website: https://github.com/GodVas
+load: STARTUP
