@@ -37,7 +37,8 @@ ScheduleAPI::delayedRepeatingTask (function () use ($main) {
 ```
 
 ### ScheduleAPI Function cancelTask
-#taskHandler = ScheduleAPI::repeatingTask (function () {
+```php
+$taskHandler = ScheduleAPI::repeatingTask (function () {
     var_dump ('hello world');
 }, 20 * 2);
 ScheduleAPI::cancelTask ($taskHandler->getTaskId ());
